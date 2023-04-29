@@ -1,9 +1,14 @@
 @import "./reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap');
-body {
-    font-family: sans-serif;
-}
 
+/*
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+*/
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #000;
+}
 .container{
     width: 1200px;
     padding: 0 15px;
@@ -13,15 +18,88 @@ body {
 .section {
     padding: 90px 0;
 }
-
-.section-button {
-
-}
-
 .section-header {
-
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.section-button {
+.section-products {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+}
 
+.section-button-wrapper {
+  text-align: center;
+}
+
+/* title */
+.title {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    color: #999999;
+}
+
+/* Card */
+.card {
+    width: 270px;
+    text-align: center;
+}
+.card-img {
+    margin-bottom: 12px;
+}
+.card-title {
+    margin-bottom: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.card-old-price {
+    font-size: 14px;
+    color: #999999;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.card-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #F72464;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 9px 40px 12px;
+    background: #FFFFFF;
+    border: 1px solid #F72464;
+    border-radius: 4px;
+
+    font-style: 16;
+    font-family: 'Playfair Display', serif;
+    color: #000000;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in,
+                color 0.2ms ease-in, border 0.2s ease-in;
+}
+
+.button:hover, .button:focus {
+    background: #F72464;
+    border: 1px solid #F72464;
+    color: #FFFFFF;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+    background: #BA1044;
+    border: 1px solid #BA1044;
+    color: #FFFFFF;
 }
